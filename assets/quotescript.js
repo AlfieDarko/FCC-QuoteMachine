@@ -3,40 +3,53 @@ var quoteContainer = document.getElementById("divforQuote");
 
 var btn = document.getElementById("btn");
 
-btn.addEventListener("click", function() 
+btn.addEventListener("click", function()
 {
-    
+
     document.getElementById("divforAuthor").innerHTML = "";
     document.getElementById("divforQuote").innerHTML = "";
 
-    
+
     var ourRequest = new XMLHttpRequest();
     ourRequest.open("GET", "http://quotes.stormconsultancy.co.uk/random.json");
-    
-    ourRequest.onload = function() 
+
+    ourRequest.onload = function()
     {
-        
+
             var ourData = JSON.parse(ourRequest.responseText);
             renderHTML(ourData);
     };
-    
-    
-    ourRequest.onerror = function () 
+
+
+    ourRequest.onerror = function ()
     {
         console.log("Connection error");
     };
-    
+
     ourRequest.send();
 });
 
-function renderHTML(data) 
+function renderHTML(data)
     {
     var htmlAuthorString = "";
-    var htmlQuoteString = "";   
-    
+    var htmlQuoteString = "";
+
         htmlQuoteString += "<p><strong>" + data.quote  + ".</strong></p>";
         htmlAuthorString += "<p><strong>" + data.author  + ".</strong></p>";
         authorContainer.insertAdjacentHTML("beforeend", htmlAuthorString);
         quoteContainer.insertAdjacentHTML("beforeend", htmlQuoteString);
 
     }
+
+    function tweetIt () {
+  var phrase = document.getElementById('divforQuote').innerText
+  +
+      document.getElementById('divforAuthor').innerText
+  ;
+  var tweetUrl = 'https://twitter.com/share?text=' +
+       encodeURIComponent(phrase) +
+    '.' ;
+
+
+  window.open(tweetUrl);
+}

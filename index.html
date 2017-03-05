@@ -4,67 +4,74 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title></title>
 </head>
 
 <body>
-   <header>
-   <div class="row"> 
-    <div class="col-md-12">
-        <br><br>
-    </div>
-    </div>
-     </header> 
     <header>
-    <div class="row">
-    <div class="col-sm-2"> </div>
-    <div class="col-sm-8 alert alert-info">   
-        <h1> Random Quote Generator</h1>
-        <button id="btn" class="btn btn-default"> Generate a new quote!</button>
-    </div>
-    
-    <div class="col-sm-2"> </div>    
-    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <br>
+            </div>
+        </div>
     </header>
-    
-    <div class="row">
-       <div class="col-sm-2"> </div>
-       
-        <div class="col-sm-8 ">
-           <h1>
-            <div id="divforAuthor" class="alert-info"> 
+    <header>
+        <div class="row">
+            <div class="col-sm-2"> </div>
+            <div class="col-sm-8 whitepanel">
+                <h1 class="fontfortitle"> Random Quote Generator</h1>
+                <button id="btn" class="btn btn-default  centerstuffclass"> Generate a new quote!</button><br><br>
+
+                            <h1>
+            <div id="divforAuthor" class="authorclass" > <br>
             </div>
            </h1>
-  
-        </div>
-        
-        <div class="col-sm-2"> </div>
-        
-    </div>
-    <div class="row">
-        <div class="col-sm-2"> </div>
-        <div class="col-sm-8 alert info">
-           <blockquote>
-            <div id="divforQuote" class="alert-info"> </div>
+
+            <blockquote>
+                <div id="divforQuote" class="quoteclass">
+
+                 <br>
+                    </div>
             </blockquote>
+
+
+
+            </div>
+            <div class="col-sm-2"> </div>
         </div>
-        
-        <div class="col-sm-2"> </div>
+    </header>
+
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6"><br>
+      <i class="fa fa-twitter fa-5x fa-fw makeitwhite centerstuffclass" aria-hidden="true"></i>
+
+       <button onclick="tweetIt()" class="btn btn-default">Tweet it!</button>
+    <div class="col-sm-3"></div>
     </div>
+</div>
 
     <footer>
         <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 btn"> Built by  <a href="http://github.com/mrdotdarko"> Alfie Darko</a>. Quote Machine API provided by
-        <a href="http//www.stormconsultancy.co.uk"> Storm Consultancy</a>.
+                   <div class="row"><br>
+            </div><br>
+            <div class="col-sm-2"></div>
+
+            </div>
         </div>
-    </div>
+        <div class="footerclass"> Built by <a href="http://github.com/mrdotdarko"> Alfie Darko</a>. Quote Machine API provided by
+            <a href="http//www.stormconsultancy.co.uk"> Storm Consultancy</a>. Shout outs to <a href="http://getbootstrap.com/">Bootstrap </a> and
+            <a href="http://fontawesome.io/"> Font-Awesome </a>
     </footer>
-    
 </body>
 
 </html>
-<link rel="stylesheet2" href="assets/styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="assets/stylesheet.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 <script src="assets/quotescript.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

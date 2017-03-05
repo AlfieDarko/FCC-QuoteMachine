@@ -1,7 +1,58 @@
-.class {
+
+body {
+    background-color: #094074 !important;
+}
+.fontfortitle {
     font-size: 48px;
+    color: #094074;
+    font-weight: bolder;
 }
 
 .backgroundcolours {
     background-color: crimson;
+}
+
+.centerthediv {
+    background-color: #F9F281 !important;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    border-width:inherit
+}
+
+.whitepanel{
+    background: white;
+    border-radius: 20px;
+}
+
+.authorclass{
+    color: #094074;
+}
+
+.quoteclass{
+    color: #094074;
+}
+
+.footerclass{
+  background-color: black;
+    position:absolute;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+color: white;
+    text-align: center;
+}
+
+a:hover {
+    color: grey;
+
+}
+
+.makeitwhite{
+    color: white;
+}
+
+.centerstuffclass{
+        text-align: center;
 }
